@@ -1,3 +1,4 @@
+import arrays as easyProb
 
 def num_runner():
   sum=1
@@ -51,6 +52,9 @@ def loop_runner(start,end,element,arr):
   return temp_count
   
 
-numbers=[1,1,2,2,2,3,3,3,4,5,6,7]
-a=count(numbers,len(numbers),0)
+# numbers=[1,1,2,2,2,3,3,3,4,5,6,7]
+# a=count(numbers,len(numbers),0)
+# print(a)
+
+a=easyProb.casting(100023);
 print(a)
