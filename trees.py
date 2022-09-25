@@ -58,9 +58,9 @@ class BinaryTreees:
 
 
     
-  def lookup(this.value):
-    if(this.root==None):return None
-    pointer=this.root
-    while(pointer):
-      if(value>pointer.value):
+  # def lookup(this.value):
+  #   if(this.root==None):return None
+  #   pointer=this.root
+  #   while(pointer):
+  #     if(value>pointer.value):
     

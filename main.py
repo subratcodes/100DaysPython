@@ -1,8 +1,6 @@
 import arrays as easyProb
 from trees import BinaryTreees
+import strings
 
-
-a=BinaryTreees()
-a.insert(2)
-b=a.insert(3)
-print(b)
+a=strings.isogram('machine')
+print(a)
