@@ -1,4 +1,4 @@
-# this part of code focuses on trees.
+
 
 # node class which creates the object and its properties.
 class Node:
@@ -63,4 +63,15 @@ class BinaryTreees:
   #   pointer=this.root
   #   while(pointer):
   #     if(value>pointer.value):
-    
+
+ # returns the value by searching using a binary search
+  def lookup (this,value):
+    if(this.root==None): return None
+    pointer=this.root
+    while(pointer!=None):
+      if(value>pointer.value): pointer=pointer.right
+      elif(value<pointer.value):pointer=pointer.left
+      else: return pointer.value 
+    return None
+
+  

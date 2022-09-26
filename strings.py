@@ -10,9 +10,9 @@ def isogram(s):
 
 
   def removeConsecutiveCharacter(self, S):
-    if(len(s)==0) return False
+    if(len(s)==0): return False
     length=len(s)
     i=y=0
     result=''
-    while(i<length-1):
+  
       

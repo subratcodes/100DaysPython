@@ -2,5 +2,10 @@ import arrays as easyProb
 from trees import BinaryTreees
 import strings
 
-a=strings.isogram('machine')
+
+Btree=BinaryTreees()
+Btree.insert(2)
+Btree.insert(3)
+Btree.insert(1)
+a=Btree.lookup(0)
 print(a)
