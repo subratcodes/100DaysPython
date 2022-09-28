@@ -74,4 +74,25 @@ class BinaryTreees:
       else: return pointer.value 
     return None
 
-  
+
+  # deletes the array
+  def delete(this,value):
+    if(this.root==None): return None
+
+    parentNode=this.root
+    currentNode=None
+    while(currentNode!=None):
+      if(value<currentNode.value):
+        parentNode=parentNode
+        currentNode=parentNode.left
+      elif(value>currentNode.value):
+        parentNode=parentNode
+        currentNode=parentNode.right
+    
+        # value has been matched
+        
+      
+      
+      
+      
+    
