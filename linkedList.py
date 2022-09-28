@@ -40,3 +40,13 @@ class LinkedList:
 # doubly linked list
 
 
+
+
+
+
+
+  
+    
+   
+        
+      
