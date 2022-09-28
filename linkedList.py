@@ -32,8 +32,11 @@ class LinkedList:
     else:
       temp=self.head
       while(temp):
-        print(temp.value)
+        print(temp.value,end="")
         temp=temp.next
         
         
-      
+
+# doubly linked list
+
+
