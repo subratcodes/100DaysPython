@@ -39,4 +39,6 @@ def firstElementKTime(arr,n,k):
   return -1
 
 
-  
+
+
+
