@@ -21,6 +21,8 @@ class Graph:
         return True
 
     def BFS(self, root):
+        if (self.adjacentList[root] == None):
+            raise ('Wrong node you picket fool')
         visited = set()
         queue = deque([root])
 
@@ -33,4 +35,15 @@ class Graph:
                 if i not in visited:
                     queue.append(i)
 
-            print(visited)
+        print(visited)
+
+    def DFS(self, root, visited):
+        if (root is None): raise (' No root given')
+        if root not in visited:
+            visited.add(root)
+            print(root)
+            for neighbour in self.adjacentList[root]:
+                self.DFS(neighbour, visited)
+
+    def ShowNodes(self):
+        return self.adjacentList

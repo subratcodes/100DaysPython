@@ -1,22 +1,31 @@
-import arrays as easyProb
-from trees import BinaryTreees
-from linkedList import LinkedList
-from slidingWindow import SubArray_with_given_sum
+# import arrays as easyProb
+# from trees import BinaryTreees
+# from linkedList import LinkedList
+# from slidingWindow import SubArray_with_given_sum
+from graphs import Graph
 
 
-# Btree=BinaryTreees()
-# Btree.insert(2)
-# Btree.insert(3)
-# Btree.insert(1)
-# a=Btree.lookup(0)
-# print(a)
+test= Graph()
+test.addNodes(0)
+test.addNodes(1)
+test.addNodes(2)
+test.addNodes(3)
+test.addNodes(4)
 
-# test=LinkedList(2)
-# a=test.insert(3)
-# a=test.insert(4)
-# print(a)
 
-# test.printElements()
-arr=[1,2,3,7,5]
-a=SubArray_with_given_sum(arr,len(arr),12)
-print(a)
+test.addEdges(0,1)
+test.addEdges(0,3)
+test.addEdges(0,2)
+test.addEdges(1,3)
+test.addEdges(3,4)
+
+
+b=test.ShowNodes()
+#b=test.BFS(1)
+
+visited=set()
+test.DFS(0,visited)
+
+
+print(b)
+
