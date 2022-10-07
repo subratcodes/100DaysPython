@@ -39,6 +39,24 @@ def firstElementKTime(arr,n,k):
   return -1
 
 
+def immediateSmaller(arr,n):
+
+  stack=[arr[0]]
+  
+
+  for x in range(1,n):
+
+    if(stack[len(stack)-1]>arr[x]):
+      
+      arr[x-1]=arr[x]
+    else: arr[x-1]=-1
+    stack.append(arr[x])
+
+  arr[n-1]=-1
+  return arr
+
+
+  
 
 
 
