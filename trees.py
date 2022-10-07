@@ -77,3 +77,18 @@ class BinaryTreees:
         elif type == 'postOrder':
             if root is None: return
             print(this.root)
+
+    def PreorderUsingStack(this):
+      if(this.root is None): return None
+      result=[]
+      stack=[]
+      stack.append(this.root)
+      while len(stack)!=0:
+        temp=stack[-1]
+        stack.pop()
+        result.append(temp.data)
+        if(temp.right): stack.append(temp.right)
+        if(temp.left):stack.apppend(temp.left)
+      return result
+        
+    
