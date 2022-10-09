@@ -60,3 +60,23 @@ def immediateSmaller(arr,n):
 
 
 
+
+
+def sort012(arr,n):
+
+  i=0
+  j=1
+  while(i<j and j<n):
+    if arr[i]<arr[j]:
+      i+=1
+      j+=1
+    elif(arr[i]>arr[j]):
+      temp=arr[j]
+      arr[j]=arr[i]
+      arr[i]=temp
+      
+      
+
+    
+    
+  

@@ -21,4 +21,4 @@ import arrays
 
 
 a=map(lambda a:a*a,[1,2,3])
-print(list(a))
+print(str([1,2,4]))
