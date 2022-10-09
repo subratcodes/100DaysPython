@@ -18,3 +18,6 @@ def print_first_letter(String):
         elif (String[x].isspace()):
             result += String[x+1]
     return result
+
+
+  
