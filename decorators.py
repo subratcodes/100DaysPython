@@ -7,11 +7,9 @@ user1 = {
 def authenticated(fn):
   def wrapper(obj):
     print(obj)
-    if(obj['valid']):
-      fn(obj)
-    else:print('Cannot call')
-    
-    
+    # if(obj.valid):
+    #   fn(obj)
+    # else: print('Cannot call')
   return wrapper
   # code here
 
