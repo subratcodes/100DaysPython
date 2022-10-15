@@ -1,22 +1,18 @@
-# Create an @authenticated decorator that only allows the function to run is user1 has 'valid' set to True:
-user1 = {
-    'name': 'Sorna',
-    'valid': True #changing this will either run or not run the message_friends function.
-}
 
-def authenticated(fn):
-  def wrapper(obj):
-    print(obj)
-    if(obj['valid']):
-      fn(obj)
-    else:print('Cannot call')
-    
-    
-  return wrapper
-  # code here
+import  graphs
 
-@authenticated
-def message_friends(user):
-    print('message has been sent')
 
-message_friends(user1)
+maps=  graphs.wGraph()
+
+for x in range(0,5):
+  maps.addNodes(x)
+
+
+
+maps.addEdges(0,1,1)
+maps.addEdges(0,2,2)
+maps.addEdges(0,3,3)
+maps.addEdges(1,2,1)
+maps.addEdges(1,4,3)
+maps.BreadthFirstSearch(0)
+
