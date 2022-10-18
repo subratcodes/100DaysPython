@@ -20,5 +20,80 @@ def print_first_letter(String):
     return result
 
 
+def uncommon_chars(A,B):
+  
+  result=[]
+  for x in A:
+    found=False  
+    for y in B:
+      if (x==y):
+        found=True
+        break;
+    if(found):continue
+    else:
+      if x not in result:result.append(x)
 
+  for x in B:
+    found=False
+    for y in A:
+      if(x==y):
+        found=True
+        break;
+    if found:continue
+    else:
+      if x not in result:
+        result.append(x)
+
+  result.sort()
+  print(result)      
+
+
+
+
+
+def sum_numbers(string):
+  temp='0'
+  sum=0
+  for x in range(0,len(string)):
+
+    if string[x].isdigit():
+      
+      temp+=string[x]
+    else:
+      sum+=int(temp)
+      temp='0'
+  print(sum)
+    
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+      
+      
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+    
+        
+          
+        
+    
+  
+  
+  
+  
 

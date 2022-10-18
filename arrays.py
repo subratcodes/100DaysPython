@@ -79,4 +79,32 @@ def sort012(arr,n):
 
     
     
-  
+def min_distance(arr,n,num1,num2):
+  min_dist=0
+  x_index=-1
+  y_index=-1
+
+
+
+def binary_recursie(arr,x):
+
+  middle_index=len(arr)-1
+  middle_index=middle_index/2
+
+
+
+def first_last_occurences(arr,num):
+
+  first_index=-1
+  second_index=-1
+
+  for x in range(0,len(arr)):
+    
+    if(arr[x]==num and first_index==-1):first_index=x
+    if(arr[x]!=num and first_index!=-1):second_index=x-1
+
+  print(first_index,second_index)
+      
+      
+     
+      

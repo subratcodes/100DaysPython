@@ -120,10 +120,10 @@ class wGraph:
 
       for x in temp[vertex]:
         if x[0] not in visited:queue.append(x[0])
-      
-      
-
     print(visited)
+
+    
+    
 
       
         
