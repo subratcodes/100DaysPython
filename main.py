@@ -2,6 +2,7 @@
 import  graphs
 import strang
 import arrays
+import linkedList
 
 
 # maps=  graphs.wGraph()
@@ -19,4 +20,8 @@ import arrays
 # maps.BreadthFirstSearch(0)
 
 
-check=arrays.first_last_occurences([1, 3, 5, 5, 5, 5, 67, 123, 125],5)
+ll=linkedList.LinkedList(2)
+ll.insert(3)
+ll.insert(4)
+ll.insert(5)
+ll.reverse()

@@ -66,8 +66,13 @@ def sum_numbers(string):
     
       
       
+def last_index(string):
+  last_index=-1
+  for x in range(0,len(string)):
+    if string[x]=='1':last_index=x
 
-      
+  print(last_index)
+    
       
       
 

@@ -30,8 +30,9 @@ class LinkedList:
         if (self.head == None): return None
         else:
             temp = self.head
+          
             while (temp):
-                print(temp.value, end="")
+                print(temp.value,end="--->")
                 temp = temp.next
 
 
@@ -60,9 +61,39 @@ class LinkedList:
                 i += 1
 
 
-def findLength(head):
-    count = 0
-    while head is None:
-        head = head.next
-        count += 1
-    return count
+    def reverse(self):
+      # first iterative
+      
+      first=self.head
+      second=first.next
+      self.tail=self.head
+      
+      while(second):
+        third=second.next
+        second.next=first
+        first=second
+        second=third
+
+      self.head.next=None
+      self.head=first
+      return self.printElements()
+        
+      
+      
+      
+
+      
+      
+          
+
+        
+  
+
+
+
+
+
+
+  
+    def reverse_recursive(self):
+       
