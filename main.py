@@ -21,7 +21,7 @@ import linkedList
 
 
 ll=linkedList.LinkedList(2)
-ll.insert(3)
-ll.insert(4)
-ll.insert(5)
-ll.reverse()
+ll.insert(2)
+ll.insert(2)
+ll.insert(2)
+ll.duplicateElement()

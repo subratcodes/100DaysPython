@@ -95,5 +95,21 @@ class LinkedList:
 
 
   
-    def reverse_recursive(self):
-       
+  
+
+
+
+
+  
+    def duplicateElement(self):
+      if not self.head:return None
+
+      temp=self.head
+      while temp.next!=None:
+        if(temp.value==temp.next.value):
+          suffix=temp.next
+          temp.next=suffix.next
+        else :temp=temp.next
+
+      return self.printElements()
+        
