@@ -3,12 +3,14 @@ import  graphs
 import strang
 import arrays
 import linkedList
+from errorHandling import runs
+from sorting import selectionSort
 
 
-# maps=  graphs.wGraph()
+a=[64, 25, 12, 22, 11]
 
-# for x in range(0,5):
-#   maps.addNodes(x)
+print(selectionSort(a))
+
 
 
 
@@ -20,8 +22,8 @@ import linkedList
 # maps.BreadthFirstSearch(0)
 
 
-ll=linkedList.LinkedList(2)
-ll.insert(2)
-ll.insert(2)
-ll.insert(2)
-ll.duplicateElement()
+# ll=linkedList.LinkedList(2)
+# ll.insert(2)
+# ll.insert(2)
+# ll.insert(2)
+# ll.duplicateElement()

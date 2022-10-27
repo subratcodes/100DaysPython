@@ -99,8 +99,6 @@ class LinkedList:
 
 
 
-
-  
     def duplicateElement(self):
       if not self.head:return None
 
@@ -112,4 +110,6 @@ class LinkedList:
         else :temp=temp.next
 
       return self.printElements()
-        
+
+
+  
