@@ -106,5 +106,18 @@ def first_last_occurences(arr,num):
   print(first_index,second_index)
       
       
-     
-      
+
+def leaders(arr):
+
+  result=[]
+  
+  for x in range(0,len(arr)):
+    item=arr[x]
+    found=True
+    for y in range(x+1,len(arr)):
+      if(item<arr[y]):
+        found=False
+        break
+    if(found):result.push(arr[x])
+  print(result)
+        
