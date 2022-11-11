@@ -102,3 +102,10 @@ def last_index(string):
   
   
 
+
+def reverseWithSpaces(string):
+  print(string[::-1])
+  
+ 
+  
+  

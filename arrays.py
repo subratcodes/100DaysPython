@@ -93,31 +93,33 @@ def binary_recursie(arr,x):
 
 
 
-def first_last_occurences(arr,num):
-
-  first_index=-1
-  second_index=-1
-
-  for x in range(0,len(arr)):
+      
     
-    if(arr[x]==num and first_index==-1):first_index=x
-    if(arr[x]!=num and first_index!=-1):second_index=x-1
+    
 
-  print(first_index,second_index)
-      
-      
-
-def leaders(arr):
-
-  result=[]
-  
-  for x in range(0,len(arr)):
-    item=arr[x]
-    found=True
-    for y in range(x+1,len(arr)):
-      if(item<arr[y]):
-        found=False
-        break
-    if(found):result.push(arr[x])
-  print(result)
         
+
+
+
+
+#subaary problems
+
+
+def waveOrder(n,arr):
+  i=0 
+  j=1
+  last_element=n-1
+  if(n%2==0):last_element=n-2 
+
+  while(j<=last_element):
+    if(j%2!=0):
+      arr[i],arr[j]=arr[j],arr[i]
+      i+=1
+      j+=1
+    else: 
+      i+=1
+      j+=1
+  return arr
+    
+  
+  

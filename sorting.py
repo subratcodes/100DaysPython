@@ -14,7 +14,12 @@ def selectionSort(arr):
   return arr
 
 
+
 def insertionSort(arr):
+  #applications
+  ##when we the array is already sorted and can this algo csn give results in a linear time tooo.
+  return arr  
+ 
   
   
   

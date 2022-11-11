@@ -7,12 +7,15 @@ from errorHandling import runs
 from sorting import selectionSort
 
 
-a=[64, 25, 12, 22, 11]
+# a=[64, 25, 12, 22, 11]
 
-print(selectionSort(a))
+# arrays.leaders(a)
 
+# str='Help others'
+# strang.reverseWithSpaces(str)
 
-
+a=[1,2,3,4,5]
+print(arrays.waveOrder(len(a),a))
 
 # maps.addEdges(0,1,1)
 # maps.addEdges(0,2,2)
