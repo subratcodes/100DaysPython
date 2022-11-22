@@ -15,6 +15,10 @@ class Player:
 
 
 class Subrat(Player):
+  def __init__(self,name,age):
+    self.age=age
+    self.name=name
+  
   
 
   
