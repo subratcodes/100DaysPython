@@ -50,87 +50,56 @@ class Graph:
         return self.adjacentList
 
 
-
-
-
-
-
-
-
-
 #weighted directed graph.
 class wGraph:
-  def __init__(self):
-    self.length=0
-    self.adjacentList={}
 
+    def __init__(self):
+        self.length = 0
+        self.adjacentList = {}
 
-  def addNodes(self,node):
-    if(node  not in self.adjacentList):
-      self.adjacentList[node]=[]
-    else : raise('Node has already been put')
+    def addNodes(self, node):
+        if (node not in self.adjacentList):
+            self.adjacentList[node] = []
+        else:
+            raise ('Node has already been put')
 
+    def addEdges(self, node1, node2, cost):
 
-  def addEdges(self,node1,node2,cost):
+        list = []
+        list.append(node2)
+        list.append(cost)
 
-    list=[]
-    list.append(node2)
-    list.append(cost)
-    
-    temp=self.adjacentList[node1]
-    #add the list in the list
-    
-    temp.append(list)
-    self.adjacentList[node1]=temp
-    
-    return True
-    
+        temp = self.adjacentList[node1]
+        #add the list in the list
 
+        temp.append(list)
+        self.adjacentList[node1] = temp
 
-
-
-  
-
+        return True
 
 
 #def connections.
-  def showConnections(self):
-    temp=self.adjacentList
-  
-    for x in temp:
-      
-     
-      for y in self.adjacentList[x]:
-        print(y)
 
-  
+    def showConnections(self):
+        temp = self.adjacentList
 
+        for x in temp:
 
-  def BreadthFirstSearch(self,root):
+            for y in self.adjacentList[x]:
+                print(y)
 
-    temp=self.adjacentList
-    
-    visited=set()
-    #the value root which has been added previously.
-    queue=deque([root])
-  
-    while queue:
-      vertex=queue.popleft()
-      visited.add(vertex)
+    def BreadthFirstSearch(self, root):
 
-      for x in temp[vertex]:
-        if x[0] not in visited:queue.append(x[0])
-    print(visited)
+        temp = self.adjacentList
 
-    
-    
+        visited = set()
+        #the value root which has been added previously.
+        queue = deque([root])
 
-      
-        
-      
-      
+        while queue:
+            vertex = queue.popleft()
+            visited.add(vertex)
 
-      
-      
-
-    
+            for x in temp[vertex]:
+                if x[0] not in visited: queue.append(x[0])
+        print(visited)

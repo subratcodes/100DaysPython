@@ -30,11 +30,10 @@ class LinkedList:
         if (self.head == None): return None
         else:
             temp = self.head
-          
-            while (temp):
-                print(temp.value,end="--->")
-                temp = temp.next
 
+            while (temp):
+                print(temp.value, end="--->")
+                temp = temp.next
 
 # doubly linked list
 
@@ -60,56 +59,42 @@ class LinkedList:
                 temp = temp.next
                 i += 1
 
-
     def reverse(self):
-      # first iterative
-      
-      first=self.head
-      second=first.next
-      self.tail=self.head
-      
-      while(second):
-        third=second.next
-        second.next=first
-        first=second
-        second=third
+        # first iterative
 
-      self.head.next=None
-      self.head=first
-      return self.printElements()
-        
-      
-      
-      
+        first = self.head
+        second = first.next
+        self.tail = self.head
 
-      
-      
-          
+        while (second):
+            third = second.next
+            second.next = first
+            first = second
+            second = third
 
-        
-  
-
-
-
-
-
-
-  
-  
-
-
+        self.head.next = None
+        self.head = first
+        return self.printElements()
 
     def duplicateElement(self):
-      if not self.head:return None
+        if not self.head: return None
 
-      temp=self.head
-      while temp.next!=None:
-        if(temp.value==temp.next.value):
-          suffix=temp.next
-          temp.next=suffix.next
-        else :temp=temp.next
+        temp = self.head
+        while temp.next != None:
+            if (temp.value == temp.next.value):
+                suffix = temp.next
+                temp.next = suffix.next
+            else:
+                temp = temp.next
 
-      return self.printElements()
+        return self.printElements()
 
+#floyed cycle detection algorithim.
 
-  
+    def check_cycle(self):
+        fast_ptr = self.head
+        slow_ptr = self.head
+        while (slow_ptr and fast_ptr and fast_ptr.next):
+            if (slow_ptr == fast_ptr): return True
+            slow_ptr = slow_ptr.next
+            fast_ptr = fast_ptr.next
