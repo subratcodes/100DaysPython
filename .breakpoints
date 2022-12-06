@@ -1,3 +1,18 @@
 {
-  "files": {}
+  "files": {
+    "arrays.py": [
+      {
+        "id": "daf13bcd-3a61-49c8-80a7-a18859075068",
+        "line": 107,
+        "version": 5201,
+        "index": 1958
+      },
+      {
+        "id": "2af582cc-84d9-495c-aaf4-f082faf910d3",
+        "line": 110,
+        "version": 5201,
+        "index": 2051
+      }
+    ]
+  }
 }

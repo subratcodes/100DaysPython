@@ -89,6 +89,7 @@ class LinkedList:
 
         return self.printElements()
 
+
 #floyed cycle detection algorithim.
 
     def check_cycle(self):
@@ -98,3 +99,5 @@ class LinkedList:
             if (slow_ptr == fast_ptr): return True
             slow_ptr = slow_ptr.next
             fast_ptr = fast_ptr.next
+
+    
