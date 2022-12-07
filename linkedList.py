@@ -100,4 +100,18 @@ class LinkedList:
             slow_ptr = slow_ptr.next
             fast_ptr = fast_ptr.next
 
-    
+    def groupTogether(self):
+      if self.head and self.head.next:
+        return head
+
+      last_odd=curr=head #odd
+      even_head=head.next # even
+      while curr and curr.next:
+        next_ptr=curr.next
+        #even index is being stored here.
+        curr.next=curr.next.next
+        #1---3
+        curr=next_ptr
+        i+=1
+      
+  

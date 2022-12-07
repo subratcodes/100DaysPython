@@ -31,7 +31,8 @@ class BinarySearch:
       if(self.array[mid]==target): return mid
       elif self.array[mid]<target:low=mid+1
       else: high=mid-1
-    
+
+    print(high)
     return high+1
 
     

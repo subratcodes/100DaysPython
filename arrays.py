@@ -99,6 +99,17 @@ def waveOrder(n, arr):
     return arr
 
 
+
+def find_numbers(arr):
+  expect_numbers=set(list(range(1,len(arr)+1)))
+
+  diff_numbers=set(arr)
+
+  return list(expected_numbers-diff_numbers)
+  
+
+
+
 class two_pointer:
 
     def sort_zero_end(self, arr):
@@ -118,3 +129,4 @@ class two_pointer:
       
           
           
+
