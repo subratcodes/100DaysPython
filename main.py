@@ -14,7 +14,22 @@ import search
 
 # diagonal=solution()
 # a= diagonal.transpose_matrix([[1,2,3],[4,5,6],[7,8,9]],3)
-bs=search.BinarySearch([1,2,4,5,6,8])
-print(bs.iterative(0))
+
+# a=[0,1,0,3,12]
+# bs=arrays.two_pointer()
+# bs.sort_zero_end(a)
+
+list=LinkedList(0)
+for x in range(1,4):
+  list.insert(x)
+
+
+list.printElements()
+print("----")
+list.reverse_iterative()
+
+  
+  
+
 
     

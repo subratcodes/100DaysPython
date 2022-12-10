@@ -115,7 +115,7 @@ class two_pointer:
     def sort_zero_end(self, arr):
         i = 0
         j = 0
-        while (i <= j and j<len(arr)):
+        while (i <= j and j<=len(arr)-2):
             while arr[i] != 0:
                 i += 1
             while arr[j] == 0:
@@ -129,4 +129,5 @@ class two_pointer:
       
           
           
+
 

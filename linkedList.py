@@ -76,6 +76,22 @@ class LinkedList:
         self.head = first
         return self.printElements()
 
+    def reverse_iterative(self):
+      
+      prev = None
+      current=next=self.head
+      self.tail=self.head
+      
+      while(current):
+        next=current.next
+        current.next=prev
+        prev=current
+        current=next
+
+      self.head=prev
+      return self.printElements()        
+      
+
     def duplicateElement(self):
         if not self.head: return None
 
@@ -99,19 +115,3 @@ class LinkedList:
             if (slow_ptr == fast_ptr): return True
             slow_ptr = slow_ptr.next
             fast_ptr = fast_ptr.next
-
-    def groupTogether(self):
-      if self.head and self.head.next:
-        return head
-
-      last_odd=curr=head #odd
-      even_head=head.next # even
-      while curr and curr.next:
-        next_ptr=curr.next
-        #even index is being stored here.
-        curr.next=curr.next.next
-        #1---3
-        curr=next_ptr
-        i+=1
-      
-  
